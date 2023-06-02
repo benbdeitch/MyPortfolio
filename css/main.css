@@ -67,7 +67,6 @@ nav li{
     margin-left:2rem;   
     float:center;
     word-wrap:initial
-    position:absolute;
     }
 .main, .side{
     border-radius:10px;

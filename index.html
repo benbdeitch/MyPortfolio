@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Benjamin's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="initialize()">
+    
+    <script>
+        function show(input){
+            document.getElementById("article1").hidden = true; 
+            document.getElementById("article2").hidden = true;
+            document.getElementById("article3").hidden = true; 
+            
+            document.getElementById(input).hidden = false; 
+        }
+        function initialize(){
+            document.getElementById("article1").hidden = false; 
+            document.getElementById("article2").hidden = true;
+            document.getElementById("article3").hidden = true; 
+            
+        }
+    </script>
+    <noscript> 
+        Sorry, your website doesn't support Javascript. Don't bother with the buttons on top, as they won't work. You'll have to scroll manually. 
+
+    </noscript>
+    <nav>
+       <ul>
+        <li>Ben's Portfolio:</li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+       </ul>
+          
+            
+    </nav>
+    <div class="hero-image">
+        <div class="hero-text">
+        <h1>Benjamin Deitch</h1>
+        <p>Python Programmer.</p>
+            </div>
+        </div>
+    <h1 class="headings"><span onclick="show('article1')";>Title A </span> &nbsp; &nbsp; &nbsp; <span onclick="show('article2')";> Academic Interests</span>&nbsp; &nbsp; &nbsp;<span onclick="show('article3')";> Other Hobbies</span></h1>
+       <hr>
+      
+       <div class="bigTable">
+    <main class="main">
+        
+        <br>
+        <br>
+        <article  id="article1" class="main-article">
+           
+           
+            <strong><small>About Me</small></strong>
+            <p>Hello! As you've probably gathered, I'm Benjamin Deitch. I graduated from Adelphi University in May of 2022, with a B.S. in Mathematics. My first experience with any sort of coding was when I was at a summer camp, where I got to experience the joys and wonders of.... Q-Basic. I wish I was joking. 
+                My first experience with coding involved pixels on a grid, with color, shapes, and a rather obtuse interface. Nevertheless, it set me up 
+            </p>
+        </article>
+        <article id="article2" class="main-article">
+            <h2> Cellular Automata </h2>
+            <figure>
+                <img src="images\ElementaryCA30_1000.svg" alt="Placeholder">
+                <figcaption><em>An Elementary Cellular Automata, Rule 60.<br> </em>
+                    Weisstein, Eric W. "Elementary Cellular Automaton." <i>From MathWorld</i>--A Wolfram Web Resource. <br><a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html"><i>https://mathworld.wolfram.com/ElementaryCellularAutomaton.html</i></a>
+
+                </figcaption>
+            </figure>
+            <p>When I was around the age of eight or ten, I was taken to the local science museum by my parents. It was a wonderful time, ,but of all the different exhibits, there was one in particular that caught my eye; a demonstration of Conway's Game of Life.
+            This was at an age when flashing lights never ceased to catch my interest, but even so, the intricate patterns formed by simple rules amazed me. I marveled at the slow glider crawling across the screen, as I placed little cells to 
+            impede its motion, watching the stylized plane 'explode' into pixellated algal blooms. Ever since then, the field has been of immense interest to me, and I've done several projects on the topic. I installed programs to model them on my middle school's computers, 
+            and spent many a happy lunch break messing around with the various automata installed.  <br>
+            
+            I'm not an expert on the subject, by any means; at best, I'm simply an enthusiast. With that said, however, I'm always looking for an excuse to further my own knowledge on the subject. These zero-player games have a wide variety of practical uses, and can often vastly exceed the efficiency of other methods of simulation-- albeit, at the cost of some 
+            measure of accuracy. If you're interested in a fun (albeit ironically quite dry) read, I recommend <a href="https://www.dora.lib4ri.ch/eawag/islandora/object/eawag%3A19687/datastream/PDF/Jamali-2019-A_cellular_automata_fast_flood-%28published_version%29.pdf">this link</a>, for a fascinating explanation of a ruleset built to model flooding within urban areas. 
+            </p>
+        </article>
+        <article id="article3" class="main-article">
+            <strong><small>Writing</small></strong>
+            <p>When it comes to writing, I'd personally describe myself as an 'extreme amateur'. I rarely produce anything other than short snippets, and frankly, don't spend enough time practicing
+                to do more. Still, it's a hobby that I'd like to focus on more, in the future.  If I had to name a goal, related to it, I'd love to get a short story published, but I don't really aspire to becoming a novelist. I decided fairly early on: I wanted this to stay a hobby, and not a career.  
+            </p>
+            <Strong><small>Reading</small></Strong>
+            <p>I've always been an avid reader; primarily of fantasy. Among my favorites are Terry Pratchett's <i>'Discworld'</i> series, and his <i>'Bromeliad'</i> trilogy, but I'm not particularly picky.  I've also 
+                been delving into more of the 'classics', as of late; in particular, I especially enjoyed <i>L'Etranger</i>, by Albert Camus, and <i>Crime and Punishment</i> by Fyodor Dostoevsky. At the moment, I'm chipping my way 
+                through <i>The Idiot</i>, by Dostoevsky, and <i>Ulysses</i> by James Joyce.
+            </p>
+        </article>
+        </main>
+        <div class="side">
+            <article id="article4" class="side-article">
+                
+                <h2>Benjamin Deitch</h2>
+                <figure>
+                    <img src="http://placehold.it/100x100" alt="This is a picture of Benjamin Deitch" class="profile-image">
+               </figure>
+                 <ul class="no">
+                        <li>26 Emerald Street</li>
+                        <li>Newton, MA, 02458</li>
+                        <li>(516)-592-3796</li>
+                        <li><a href="mailto:benbdeitch@gmail.com">benbdeitch@gmail.com</a></li>
+                </ul> 
+                </article>
+                </div>
+                <div class="side">
+                    <article>
+                        <h3>Feel free to contact me!</h3>
+                        <p>The text-box below currently doesn't function, so treat it like decoration. Once I learn PHP, I'll fix it up. </p>
+                        </article>
+                        </div>
+                <div class="side">
+                <form id="Contact" action="mailto:benbdeitch.com" method="POST">
+                   <label for="inquiry1">Name:</label> 
+                   <br>
+                   <input type="text" id="inquiry1" name="name"> <br>
+                   <label for="questions">Question: </label><br>
+                    <textarea rows="4" columns="20" id="questions" name="questions"> Write any questions you may have, here.</textarea>
+                   <br>
+                   <input type="submit">
+
+
+                </form>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <div>
+            &copy; &nbsp;Benjamin Deitch <br>
+            <p class="subtext">Header Image by <a href="https://www.freepik.com/free-photo/book-composition-with-open-book_1320550.htm#query=book&position=0&from_view=keyword&track=sph">Freepik</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
